@@ -1,0 +1,75 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.android.bignerdranch"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="19"
+8-->/Users/hayamhiba/AndroidStudioProjects/CriminalIntent/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="30" />
+9-->/Users/hayamhiba/AndroidStudioProjects/CriminalIntent/app/src/main/AndroidManifest.xml
+10
+11    <uses-feature
+11-->/Users/hayamhiba/AndroidStudioProjects/CriminalIntent/app/src/main/AndroidManifest.xml:5:5-8:11
+12        android:name="android.hardware.camera"
+12-->/Users/hayamhiba/AndroidStudioProjects/CriminalIntent/app/src/main/AndroidManifest.xml:6:9-47
+13        android:required="false" />
+13-->/Users/hayamhiba/AndroidStudioProjects/CriminalIntent/app/src/main/AndroidManifest.xml:7:9-33
+14
+15    <application
+15-->/Users/hayamhiba/AndroidStudioProjects/CriminalIntent/app/src/main/AndroidManifest.xml:9:5-41:19
+16        android:allowBackup="false"
+16-->/Users/hayamhiba/AndroidStudioProjects/CriminalIntent/app/src/main/AndroidManifest.xml:11:9-36
+17        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+17-->[androidx.core:core:1.5.0] /Users/hayamhiba/.gradle/caches/transforms-2/files-2.1/cc5e9dcdc56dc39042f72c501235e83f/core-1.5.0/AndroidManifest.xml:24:18-86
+18        android:debuggable="true"
+19        android:icon="@mipmap/ic_launcher"
+19-->/Users/hayamhiba/AndroidStudioProjects/CriminalIntent/app/src/main/AndroidManifest.xml:12:9-43
+20        android:label="@string/app_name"
+20-->/Users/hayamhiba/AndroidStudioProjects/CriminalIntent/app/src/main/AndroidManifest.xml:13:9-41
+21        android:testOnly="true"
+22        android:theme="@style/Theme.CriminalIntent" >
+22-->/Users/hayamhiba/AndroidStudioProjects/CriminalIntent/app/src/main/AndroidManifest.xml:14:9-52
+23        <activity android:name="com.android.bignerdranch.CrimeListActivity" >
+23-->/Users/hayamhiba/AndroidStudioProjects/CriminalIntent/app/src/main/AndroidManifest.xml:16:9-24:20
+23-->/Users/hayamhiba/AndroidStudioProjects/CriminalIntent/app/src/main/AndroidManifest.xml:17:13-46
+24            <intent-filter>
+24-->/Users/hayamhiba/AndroidStudioProjects/CriminalIntent/app/src/main/AndroidManifest.xml:18:13-23:29
+25                <action android:name="android.intent.action.MAIN" />
+25-->/Users/hayamhiba/AndroidStudioProjects/CriminalIntent/app/src/main/AndroidManifest.xml:19:17-20:65
+25-->/Users/hayamhiba/AndroidStudioProjects/CriminalIntent/app/src/main/AndroidManifest.xml:20:21-62
+26
+27                <category android:name="android.intent.category.LAUNCHER" />
+27-->/Users/hayamhiba/AndroidStudioProjects/CriminalIntent/app/src/main/AndroidManifest.xml:21:17-22:71
+27-->/Users/hayamhiba/AndroidStudioProjects/CriminalIntent/app/src/main/AndroidManifest.xml:22:21-68
+28            </intent-filter>
+29        </activity>
+30        <activity
+30-->/Users/hayamhiba/AndroidStudioProjects/CriminalIntent/app/src/main/AndroidManifest.xml:26:9-29:20
+31            android:name="com.android.bignerdranch.CrimePagerActivity"
+31-->/Users/hayamhiba/AndroidStudioProjects/CriminalIntent/app/src/main/AndroidManifest.xml:27:13-47
+32            android:parentActivityName="com.android.bignerdranch.CrimeListActivity" >
+32-->/Users/hayamhiba/AndroidStudioProjects/CriminalIntent/app/src/main/AndroidManifest.xml:28:13-60
+33        </activity>
+34
+35        <provider
+35-->/Users/hayamhiba/AndroidStudioProjects/CriminalIntent/app/src/main/AndroidManifest.xml:30:9-39:20
+36            android:name="androidx.core.content.FileProvider"
+36-->/Users/hayamhiba/AndroidStudioProjects/CriminalIntent/app/src/main/AndroidManifest.xml:31:13-62
+37            android:authorities="com.android.bignerdranch.criminalintent"
+37-->/Users/hayamhiba/AndroidStudioProjects/CriminalIntent/app/src/main/AndroidManifest.xml:32:13-74
+38            android:exported="false"
+38-->/Users/hayamhiba/AndroidStudioProjects/CriminalIntent/app/src/main/AndroidManifest.xml:33:13-37
+39            android:grantUriPermissions="true" >
+39-->/Users/hayamhiba/AndroidStudioProjects/CriminalIntent/app/src/main/AndroidManifest.xml:34:13-47
+40            <meta-data
+40-->/Users/hayamhiba/AndroidStudioProjects/CriminalIntent/app/src/main/AndroidManifest.xml:35:13-37:48
+41                android:name="android.support.FILE_PROVIDER_PATHS"
+41-->/Users/hayamhiba/AndroidStudioProjects/CriminalIntent/app/src/main/AndroidManifest.xml:36:17-67
+42                android:resource="@xml/files" />
+42-->/Users/hayamhiba/AndroidStudioProjects/CriminalIntent/app/src/main/AndroidManifest.xml:37:17-46
+43        </provider>
+44    </application>
+45
+46</manifest>

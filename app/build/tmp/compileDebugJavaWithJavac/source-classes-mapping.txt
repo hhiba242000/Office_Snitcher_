@@ -1,0 +1,42 @@
+com/android/bignerdranch/Crime.java
+ com.android.bignerdranch.Crime
+com/android/bignerdranch/database/CrimeDbSchema.java
+ com.android.bignerdranch.database.CrimeDbSchema
+ com.android.bignerdranch.database.CrimeDbSchema$CrimeTable
+ com.android.bignerdranch.database.CrimeDbSchema$CrimeTable$Cols
+com/android/bignerdranch/CrimeLab.java
+ com.android.bignerdranch.CrimeLab
+com/android/bignerdranch/BuildConfig.java
+ com.android.bignerdranch.BuildConfig
+com/android/bignerdranch/DatePickerFragment.java
+ com.android.bignerdranch.DatePickerFragment
+ com.android.bignerdranch.DatePickerFragment$1
+com/android/bignerdranch/SingleFragmentActivity.java
+ com.android.bignerdranch.SingleFragmentActivity
+com/android/bignerdranch/database/CrimeBaseHelper.java
+ com.android.bignerdranch.database.CrimeBaseHelper
+com/android/bignerdranch/PictureUtils.java
+ com.android.bignerdranch.PictureUtils
+com/android/bignerdranch/CrimeListFragment.java
+ com.android.bignerdranch.CrimeListFragment
+ com.android.bignerdranch.CrimeListFragment$Callbacks
+ com.android.bignerdranch.CrimeListFragment$CrimeAdapter
+ com.android.bignerdranch.CrimeListFragment$CrimeHolder
+com/android/bignerdranch/CrimeCursorWrapper.java
+ com.android.bignerdranch.CrimeCursorWrapper
+com/android/bignerdranch/CrimeListActivity.java
+ com.android.bignerdranch.CrimeListActivity
+com/android/bignerdranch/CrimePagerActivity.java
+ com.android.bignerdranch.CrimePagerActivity
+ com.android.bignerdranch.CrimePagerActivity$1
+com/android/bignerdranch/CrimeFragment.java
+ com.android.bignerdranch.CrimeFragment
+ com.android.bignerdranch.CrimeFragment$1
+ com.android.bignerdranch.CrimeFragment$2
+ com.android.bignerdranch.CrimeFragment$3
+ com.android.bignerdranch.CrimeFragment$4
+ com.android.bignerdranch.CrimeFragment$5
+ com.android.bignerdranch.CrimeFragment$6
+ com.android.bignerdranch.CrimeFragment$Callbacks
+com/android/bignerdranch/CrimeActivity.java
+ com.android.bignerdranch.CrimeActivity
