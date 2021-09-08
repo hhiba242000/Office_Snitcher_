@@ -57,8 +57,8 @@
 35-->/Users/hayamhiba/AndroidStudioProjects/CriminalIntent/app/src/main/AndroidManifest.xml:30:9-39:20
 36            android:name="androidx.core.content.FileProvider"
 36-->/Users/hayamhiba/AndroidStudioProjects/CriminalIntent/app/src/main/AndroidManifest.xml:31:13-62
-37            android:authorities="com.android.bignerdranch.criminalintent"
-37-->/Users/hayamhiba/AndroidStudioProjects/CriminalIntent/app/src/main/AndroidManifest.xml:32:13-74
+37            android:authorities="com.android.bignerdranch.criminalintent.fileprovider"
+37-->/Users/hayamhiba/AndroidStudioProjects/CriminalIntent/app/src/main/AndroidManifest.xml:32:13-87
 38            android:exported="false"
 38-->/Users/hayamhiba/AndroidStudioProjects/CriminalIntent/app/src/main/AndroidManifest.xml:33:13-37
 39            android:grantUriPermissions="true" >

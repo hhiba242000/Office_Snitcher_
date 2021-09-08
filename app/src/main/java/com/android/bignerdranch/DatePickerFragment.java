@@ -20,7 +20,7 @@ public class DatePickerFragment extends DialogFragment {
 
     private static final String ARG_DATE = "date";
     private DatePicker mDatePicker;
-    public static final String EXTRA_DATE = "com.bignerdranch.android.criminalintent.date";
+    public static final String EXTRA_DATE = "com.android.bignerdranch.criminalintent.date";
 
 
     public static DatePickerFragment newInstance(Date date) {

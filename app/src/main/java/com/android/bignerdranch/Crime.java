@@ -5,12 +5,14 @@ import java.util.Date;
 import java.util.UUID;
 
 public class Crime {
+    //fields of a crime object
     private UUID mId;
     private String mTitle;
     private String mSuspect;
     private Date mDate;
     private boolean mSolved;
 
+    // two constructors
     public Crime() {
         this(UUID.randomUUID());
     }
@@ -20,6 +22,7 @@ public class Crime {
         mDate=new Date();
     }
 
+    // a bunch of setters and getters
     public UUID getId() {
         return mId;
     }

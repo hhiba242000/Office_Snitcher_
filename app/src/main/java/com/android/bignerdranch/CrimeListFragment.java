@@ -22,6 +22,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.List;
 import java.util.concurrent.locks.Lock;
 
+//fragement that displays the list of crimes in the beginning
 public class CrimeListFragment extends Fragment {
     private static final int REQUEST_CRIME = 1;
     private static final String SAVED_SUBTITLE_VISIBLE = "subtitle";
@@ -34,13 +35,19 @@ public class CrimeListFragment extends Fragment {
     private boolean mSubtitleVisible;
     private Callbacks mCallbacks;
 
+    public static boolean updateUI;
+
+    //interface to transfer data from fragment to hsting activity
     public interface Callbacks {
         void onCrimeSelected(Crime crime);
     }
+
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
-        mCallbacks = (Callbacks) context;
+        mCallbacks = (Callbacks) context;//stores the context(hosting act.) to be used,it's instance of callback interface
+        if(updateUI)
+            updateUI();
     }
 
 
@@ -137,7 +144,11 @@ public class CrimeListFragment extends Fragment {
     private void updateSubtitle() {
         CrimeLab crimeLab = CrimeLab.get(getActivity());
         int crimeCount = crimeLab.getCrimes().size();
-        String subtitle = getString(R.string.subtitle_format, crimeCount);
+        String subtitle;
+        if(crimeCount != 1)
+            subtitle = getString(R.string.subtitle_format, crimeCount);
+        else
+            subtitle = getString(R.string.single_subtitle_format, crimeCount);
 
         if (!mSubtitleVisible) {
             subtitle = null;
@@ -147,12 +158,14 @@ public class CrimeListFragment extends Fragment {
         activity.getSupportActionBar().setSubtitle(subtitle);
     }
 
-
+//for a recycler view to work,it needs an adapter to transfer the data that will be displayed to a container
+// and this container is known as a viewHolder; another component needed by the recyclerview
 
     private class CrimeHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
         private ImageView mSolvedimageView;
 
         public CrimeHolder(LayoutInflater inflater, ViewGroup parent) {
+            //in this constructor,you inflate the layout of the viewHolder and link the View components to variables
             super(inflater.inflate(R.layout.list_item_crime, parent, false));
 
             itemView.setOnClickListener(this);
@@ -161,7 +174,7 @@ public class CrimeListFragment extends Fragment {
             mSolvedimageView=(ImageView) itemView.findViewById(R.id.crime_solved);
         }
 
-
+//bind the View varibales to actual values to display
         public void bind(Crime crime) {
             mCrime = crime;
             mTitleTextView.setText(mCrime.getTitle());

@@ -16,7 +16,7 @@ import java.util.List;
 import java.util.UUID;
 
 public class CrimePagerActivity extends AppCompatActivity implements CrimeFragment.Callbacks {
-    private static final String EXTRA_CRIME_ID = "com.bignerdranch.android.criminalintent.crime_id";
+    private static final String EXTRA_CRIME_ID = "com.android.bignerdranch.criminalintent.crime_id";
 
     private ViewPager mViewPager;
     private List<Crime> mCrimes;
@@ -34,6 +34,7 @@ public class CrimePagerActivity extends AppCompatActivity implements CrimeFragme
 
         UUID crimeId = (UUID) getIntent().getSerializableExtra(EXTRA_CRIME_ID);
 
+        //viewPager used for swiping
         mViewPager = (ViewPager) findViewById(R.id.crime_view_pager);
         mCrimes= CrimeLab.get(this).getCrimes();
 
@@ -61,7 +62,8 @@ public class CrimePagerActivity extends AppCompatActivity implements CrimeFragme
     }
 
     @Override
-    public void onCrimeUpdated(Crime crime) {
-
+    public void onCrimeUpdated() {
+       CrimeListFragment.updateUI=true;
+       this.finish();
     }
 }

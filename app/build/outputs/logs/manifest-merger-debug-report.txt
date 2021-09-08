@@ -109,7 +109,7 @@ ADDED from /Users/hayamhiba/AndroidStudioProjects/CriminalIntent/app/src/main/An
 	android:grantUriPermissions
 		ADDED from /Users/hayamhiba/AndroidStudioProjects/CriminalIntent/app/src/main/AndroidManifest.xml:34:13-47
 	android:authorities
-		ADDED from /Users/hayamhiba/AndroidStudioProjects/CriminalIntent/app/src/main/AndroidManifest.xml:32:13-74
+		ADDED from /Users/hayamhiba/AndroidStudioProjects/CriminalIntent/app/src/main/AndroidManifest.xml:32:13-87
 	android:exported
 		ADDED from /Users/hayamhiba/AndroidStudioProjects/CriminalIntent/app/src/main/AndroidManifest.xml:33:13-37
 	android:name

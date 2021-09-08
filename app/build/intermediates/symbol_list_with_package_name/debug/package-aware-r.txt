@@ -1975,6 +1975,7 @@ id decelerate
 id decelerateAndComplete
 id decor_content_parent
 id default_activity_button
+id delete_crime
 id deltaRelative
 id dependency_ordering
 id design_bottom_sheet
@@ -2172,6 +2173,7 @@ id right_icon
 id right_side
 id rounded
 id row_index_key
+id save_changes
 id save_non_transition_alpha
 id save_overlay_view
 id sawtooth
@@ -2465,6 +2467,7 @@ layout text_view_with_line_height_from_layout
 layout text_view_with_line_height_from_style
 layout text_view_with_theme_line_height
 layout text_view_without_line_height
+menu fragment_crime
 menu fragment_crime_list
 mipmap ic_launcher
 mipmap ic_launcher_round
@@ -2518,6 +2521,7 @@ string crime_suspect_text
 string crime_title_hint
 string crime_title_label
 string date_picker_title
+string delete_crime
 string error_icon_content_description
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
@@ -2587,9 +2591,11 @@ string path_password_eye
 string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
+string save_crime
 string search_menu_title
 string send_report
 string show_subtitle
+string single_subtitle_format
 string status_bar_notification_info_overflow
 string subtitle_format
 style AlertDialog_AppCompat

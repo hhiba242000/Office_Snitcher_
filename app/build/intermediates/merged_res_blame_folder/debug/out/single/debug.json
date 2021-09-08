@@ -1,11 +1,11 @@
 [
     {
-        "merged": "/Users/hayamhiba/AndroidStudioProjects/CriminalIntent/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_menu_add.png.flat",
-        "source": "/Users/hayamhiba/AndroidStudioProjects/CriminalIntent/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_menu_add.png"
-    },
-    {
         "merged": "/Users/hayamhiba/AndroidStudioProjects/CriminalIntent/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_menu_add.png.flat",
         "source": "/Users/hayamhiba/AndroidStudioProjects/CriminalIntent/app/src/main/res/drawable-mdpi/ic_menu_add.png"
+    },
+    {
+        "merged": "/Users/hayamhiba/AndroidStudioProjects/CriminalIntent/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_menu_add.png.flat",
+        "source": "/Users/hayamhiba/AndroidStudioProjects/CriminalIntent/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_menu_add.png"
     },
     {
         "merged": "/Users/hayamhiba/AndroidStudioProjects/CriminalIntent/app/build/intermediates/res/merged/debug/drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
@@ -138,6 +138,10 @@
     {
         "merged": "/Users/hayamhiba/AndroidStudioProjects/CriminalIntent/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_launcher_background.png.flat",
         "source": "/Users/hayamhiba/AndroidStudioProjects/CriminalIntent/app/build/generated/res/pngs/debug/drawable-mdpi/ic_launcher_background.png"
+    },
+    {
+        "merged": "/Users/hayamhiba/AndroidStudioProjects/CriminalIntent/app/build/intermediates/res/merged/debug/menu_fragment_crime.xml.flat",
+        "source": "/Users/hayamhiba/AndroidStudioProjects/CriminalIntent/app/src/main/res/menu/fragment_crime.xml"
     },
     {
         "merged": "/Users/hayamhiba/AndroidStudioProjects/CriminalIntent/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_launcher_background.png.flat",

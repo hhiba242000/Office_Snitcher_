@@ -9,7 +9,8 @@ import java.util.Date;
 import java.util.UUID;
 
 public class CrimeCursorWrapper extends CursorWrapper {
-
+//now your data is stored in a SQL table, a cursor is your finger moving around and looking for data
+    //this class takes the id pointed at and "wraps" into a crime object
     public CrimeCursorWrapper(Cursor cursor) {
         super(cursor);
     }

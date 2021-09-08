@@ -10,8 +10,10 @@ import android.os.Bundle;
 
 import java.util.UUID;
 
+//with the existence of fragments, activities become navigation controllers
 public class CrimeActivity extends SingleFragmentActivity {
-    private static final String EXTRA_CRIME_ID = "com.bignerdranch.android.criminalintent.crime_id";
+
+    private static final String EXTRA_CRIME_ID = "com.android.bignerdranch.criminalintent.crime_id";
 
     public static Intent newIntent(UUID crimeId, Context packageContext){
         Intent intent = new Intent(packageContext, CrimeActivity.class);
@@ -21,7 +23,6 @@ public class CrimeActivity extends SingleFragmentActivity {
     }
     @Override
     protected Fragment createFragment() {
-
         UUID crimeId= (UUID) getIntent().getSerializableExtra(EXTRA_CRIME_ID);
         return CrimeFragment.newInstance(crimeId);
 

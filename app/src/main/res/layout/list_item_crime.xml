@@ -13,7 +13,10 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
+        android:background="#E8DCF4"
+        android:fontFamily="sans-serif-black"
         android:text="Crime Title"
+        android:textColor="#121111"
         app:layout_constraintEnd_toStartOf="@+id/crime_solved"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -25,7 +28,11 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
+        android:background="#F1E4F3"
+        android:fontFamily="sans-serif-medium"
         android:text="Crime Date"
+        android:textColor="#121111"
+        android:textStyle="italic"
         app:layout_constraintEnd_toStartOf="@+id/crime_solved"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/crime_title" />
@@ -35,8 +42,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
+        android:background="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@android:drawable/stat_sys_vp_phone_call" />
+        app:srcCompat="?android:attr/fingerprintAuthDrawable"
+        tools:targetApi="m" />
 </androidx.constraintlayout.widget.ConstraintLayout>

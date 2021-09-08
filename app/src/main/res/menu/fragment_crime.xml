@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/delete_crime"
+        android:checkable="true"
+        android:enabled="true"
+        android:icon="@android:drawable/btn_dialog"
+        android:title="@string/delete_crime"
+        android:visible="true"
+        app:showAsAction="ifRoom|withText" />
+
+
+    <item
+        android:id="@+id/save_changes"
+        android:checkable="true"
+        android:enabled="true"
+        android:icon="@android:drawable/checkbox_on_background"
+        android:title="@string/save_crime"
+        android:visible="true"
+        app:showAsAction="ifRoom" />
+
+</menu>

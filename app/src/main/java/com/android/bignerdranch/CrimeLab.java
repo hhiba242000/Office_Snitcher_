@@ -14,7 +14,8 @@ import java.util.List;
 import java.util.UUID;
 
 public class CrimeLab {
-    private static CrimeLab sCrimeLab;
+    //this class represents the linking chain between the DB and the fragment/activity
+    private static CrimeLab sCrimeLab;//to create a singleton
     private Context mContext;
     private SQLiteDatabase mDatabase;
 
@@ -24,6 +25,7 @@ public class CrimeLab {
         mDatabase=new CrimeBaseHelper(mContext).getWritableDatabase();
     }
 
+    //method that returns the singleton of crimeLab not its list of crimes
     public static CrimeLab get(Context context){
         if(sCrimeLab == null)
             sCrimeLab=new CrimeLab(context);
@@ -76,12 +78,18 @@ public class CrimeLab {
         File filesDir= mContext.getFilesDir();
         return new File(filesDir,crime.getPhotoFilename());
     }
+
     public void updateCrime(Crime crime) {
         String uuidString = crime.getId().toString();
         ContentValues values = getContentValues(crime);
         mDatabase.update(CrimeTable.NAME, values, CrimeTable.Cols.UUID + " = ?", new String[] { uuidString });
     }
 
+    public void deleteCrime(Crime crime){
+        String uuidString = crime.getId().toString();
+        mDatabase.delete(CrimeTable.NAME,CrimeTable.Cols.UUID+" = ?",new String[] {uuidString});
+
+    }
 
     private CrimeCursorWrapper queryCrimes(String whereClause, String[] whereArgs) {
         Cursor cursor = mDatabase.query(
